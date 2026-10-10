@@ -11,3 +11,10 @@
 
 /* v7: restriction dates side-by-side in iPhone Safari */
 .periodDatesV7{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:8px!important;align-items:start}.periodDatesV7 .field{min-width:0!important;margin:0}.periodDatesV7 label{display:block;font-size:12px;letter-spacing:-.04em}.periodDatesV7 input[type=date]{box-sizing:border-box;display:block;min-width:0!important;max-width:100%;width:100%!important;padding:9px 2px!important;font-size:12px!important;-webkit-appearance:none;appearance:none}.checkResultChoices{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.checkResultChoices button{white-space:normal;min-width:0;padding:12px 5px;font-size:12px}#editRestrictionGroup[hidden]{display:none!important}
+
+/* v8 compact date row on narrow iPhones */
+.periodDatesV8,.periodDatesV7{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;width:100%}
+.periodDatesV8 .field,.periodDatesV7 .field{min-width:0;margin:7px 0}
+.periodDatesV8 input,.periodDatesV7 input{min-width:0;width:100%;padding:9px 4px;font-size:13px}
+.checkResultChoices{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+.checkResultChoices button{min-width:0;white-space:normal}
